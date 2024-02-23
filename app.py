@@ -48,7 +48,7 @@ if st.button("Generate Image"):
             images = pipe(prompt=prompt_text, size=image_size, num_inference_steps=50).images[0]
         except Exception as e:
             st.error(f"Error generating image: {str(e)}")
-            continue
+           
 
     # Display the generated image
     st.image(images)
